@@ -6,6 +6,12 @@ h1 {
 hr {
   color: whitesmoke;
 }
+
+footer {
+  text-align: center;
+  text-decoration: none;
+  font-size: small;
+}
 .app-wrapper {
   box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
   background: radial-gradient(
