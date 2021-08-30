@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/4c75e4fb3f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-wrapper">
+        <form class="search-form" id="search-form">
+         <div class="row search-form">
+           <div class="col-7">
+             <input 
+              type="search" 
+              placeholder="Enter a city..."
+              autofocus="on"
+              autocomplete="off"
+              id="city-search-bar" 
+              class="search-bar" 
+             />
+            </div>
+           <div class="col-3">
+            <input 
+              type="submit" 
+              value="Search"
+              class="submit-button" 
+              id="city-submit-button"
+             />
+            </div>
+          </form>
+           <div class="col-2 location">
+						 <button id="location-button"><i class="fas fa-map-marker-alt"></i></button>
+          </div>
+        </div>
+        <br>
+            <div class="circle" id= "temp-display">
+              <h1> 19&#176 </h1>
+            </div>
+            <br>
+            <hr>
+            <h2> date </h2>
+            <br>
+            <div class="row chosen-location">
+              <div class="col-4 city-name" id="city-name">
+                Newcastle
+              </div>
+              <div class="col-4 weather-details">
+                <p class="degrees-choice"> &#176C | &#176F</p>
+                <br>
+                <p class="weather-symbol"><i class="fas fa-cloud-sun"></i></p>
+              </div>
+              <div class="col-4">
+              <ul class="figures-list">
+<li >
+  Visibility: <span id="visibility">1</span>
+</li>
+<li>
+  Humidity: <span id="humidity">64</span>%
+</li>
+<li>
+	Wind: <span id="wind">8</span>mph
+</li>
+              </ul>
+              </div>
+              <br>
+            </div>
+            <div class="row forecast">
+              <div class="col monday">
+               <p>Mon</p>
+               <i class="fas fa-cloud-showers-heavy"></i>
+               <p> 22&#176 | 13&#176</p>
+             </div>
+             <div class="col tuesday">
+               <p>Tues</p>
+               <i class="fas fa-cloud-showers-heavy"></i>
+               <p> 21&#176 | 14&#176</p>
+             </div>
+             <div class="col wednesday">
+               <p>Weds</p>
+               <i class="fas fa-cloud-showers-heavy"></i>
+               <p> 19&#176 | 12&#176</p>
+             </div>
+             <div class="col thursday">
+               <p>Thurs</p>
+               <i class="fas fa-cloud-showers-heavy"></i>
+               <p> 18&#176 | 11&#176</p>
+             </div>
+             <div class="col friday">
+               <p>Fri</p>
+               <i class="fas fa-cloud-showers-heavy"></i>
+               <p> 19&#176 | 13&#176</p>
+             </div>
+            </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
