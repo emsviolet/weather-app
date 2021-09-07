@@ -14,6 +14,12 @@ a {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  font-size: 50px;
+}
+
 hr {
   color: whitesmoke;
 }
@@ -69,10 +75,7 @@ footer {
   font-size: larger;
   margin-top: 15px;
 }
-.weather-symbol {
-  text-align: center;
-  font-size: 50px;
-}
+
 .weather-symbol:hover {
   color: #045362;
 }
