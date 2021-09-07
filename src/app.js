@@ -18,9 +18,7 @@ h2.innerHTML = `${day} ${date} ${hours}:${minutes}`;
 function showWeatherResponse(response) {
   console.log(response);
   document.querySelector("#city-name").innerHTML = response.data.name;
-  document.querySelector("#temp-display").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("h1").innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#visibility").innerHTML = response.data.visibility;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
