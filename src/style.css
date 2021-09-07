@@ -2,7 +2,10 @@ h1 {
   text-align: center;
   padding: 23px;
   font-weight: bolder;
-  font-size: 50px;
+  font-size: 55px;
+}
+h1:hover {
+  color: #045362;
 }
 
 hr {

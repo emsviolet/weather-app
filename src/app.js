@@ -17,8 +17,10 @@ h2.innerHTML = `${day} ${date} ${hours}:${minutes}`;
 
 function showWeatherResponse(response) {
   console.log(response);
+
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#city-name").innerHTML = response.data.name;
-  document.querySelector("h1").innerHTML = Math.round(response.data.main.temp);
+  document.querySelector("h1").innerHTML = Math.round(celsiusTemperature);
   document.querySelector("#visibility").innerHTML = response.data.visibility;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -51,10 +53,22 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("h1");
+  let fahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let celsiusTemperature = null;
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getCurrentLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 searchCity("Newcastle");
