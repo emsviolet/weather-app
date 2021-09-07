@@ -8,6 +8,12 @@ h1:hover {
   color: #045362;
 }
 
+a {
+  text-decoration: none;
+  color: #045362;
+  cursor: pointer;
+}
+
 hr {
   color: whitesmoke;
 }
