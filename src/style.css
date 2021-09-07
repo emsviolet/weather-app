@@ -41,9 +41,7 @@ footer {
   font-weight: bolder;
   color: #045362;
 }
-.location:hover {
-  color: whitesmoke;
-}
+
 .submit-button {
   width: 60%;
   border: 1px solid #045362;
@@ -51,12 +49,7 @@ footer {
   background: whitesmoke;
   padding: 5px 15px;
 }
-.degrees {
-  text-align: center;
-  padding: 23px;
-  font-weight: bolder;
-  font-size: 50px;
-}
+
 .city-name {
   font-size: xx-large;
   text-align: center;
@@ -68,6 +61,7 @@ footer {
   margin-top: 15px;
 }
 .weather-symbol {
+  text-align: center;
   font-size: 50px;
 }
 .weather-symbol:hover {
