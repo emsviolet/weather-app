@@ -83,8 +83,11 @@ footer {
   list-style: none;
   text-align: center;
 }
-.forecast {
+.weather-forecast {
   text-align: center;
   margin-top: 50px;
   font-size: medium;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }

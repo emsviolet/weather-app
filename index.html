@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
-  <body>
+   <body>
     <div class="container">
       <div class="app-wrapper">
         <form class="search-form" id="search-form">
@@ -67,48 +67,28 @@
                   <img src="" alt="Clear" id="icon">
                 </div>
               <div class="col-4">
-              <ul class="figures-list">
-<li >
-  Visibility: <span id="visibility">1</span>
-</li>
-<li>
-  Humidity: <span id="humidity">64</span>%
-</li>
-<li>
-	Wind: <span id="wind">8</span>mph
-</li>
-              </ul>
+               <ul class="figures-list">
+                 <li>Visibility: <span id="visibility">1</span></li>
+                 <li>Humidity: <span id="humidity">64</span>%</li>
+                 <li>Wind: <span id="wind">8</span>mph</li>
+               </ul>
               </div>
-              <br>
+              <br> 
             </div>
-            <div class="row forecast">
-              <div class="col monday">
-               <p>Mon</p>
-               <i class="fas fa-cloud-showers-heavy"></i>
-               <p> 22&#176 | 13&#176</p>
-             </div>
-             <div class="col tuesday">
-               <p>Tues</p>
-               <i class="fas fa-cloud-showers-heavy"></i>
-               <p> 21&#176 | 14&#176</p>
-             </div>
-             <div class="col wednesday">
-               <p>Weds</p>
-               <i class="fas fa-cloud-showers-heavy"></i>
-               <p> 19&#176 | 12&#176</p>
-             </div>
-             <div class="col thursday">
-               <p>Thurs</p>
-               <i class="fas fa-cloud-showers-heavy"></i>
-               <p> 18&#176 | 11&#176</p>
-             </div>
-             <div class="col friday">
-               <p>Fri</p>
-               <i class="fas fa-cloud-showers-heavy"></i>
-               <p> 19&#176 | 13&#176</p>
-             </div>
+            <div class="weather-forecast">
+              <div class="row">
+                <div class="col-2">
+                  <div class="weather-forecast-day">Mon</div> 
+                   <img src="http://openweathermap.org/img/wn/01n@2x.png" alt="" width="36">
+                   <div class="weather-forecast-temperatures">
+                     <span class="weather-forecast-temperature-max">18°</span>
+                     |
+                     <span class="weather-forecast-temperature-min">12°</span>
+                   </div>
+                </div>
+                </div>
+              </div> 
             </div>
-      </div>
       <footer>
         <a href="https://github.com/emsviolet/weather-app">Open-source code</a> by Emily Millard
       </footer>
